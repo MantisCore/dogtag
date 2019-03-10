@@ -23,6 +23,7 @@ namespace Dogtag
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }

@@ -4,9 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dogtag"
+        xmlns:models="clr-namespace:Dogtag.Models"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="449.076" Width="659.086">
+    <Window.DataContext>
+        <models:ViewModel/>
+    </Window.DataContext>
     <Grid>
-        
+        <TreeView HorizontalAlignment="Left" Margin="0" Width="100" ItemsSource="{ Binding Tags }">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{ Binding Tags }">
+                    <TreeViewItem Header="{Binding Name}"/>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+
     </Grid>
 </Window>
