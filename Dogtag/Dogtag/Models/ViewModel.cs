@@ -11,6 +11,7 @@ namespace Dogtag.Models
     {
         public ViewModel()
         {
+            //TEST CODE
             var tags = new List<TagGroupModel>();
             var group1 = new TagGroupModel() { Name = "Group 1" };
             group1.Tags.Add(new TagModel() { Name = "Tag A" });
@@ -18,7 +19,7 @@ namespace Dogtag.Models
             group1.Tags.Add(new TagModel() { Name = "Tag C" });
             tags.Add(group1);
 
-            var group2 = new TagGroupModel() { Name = "Group 1" };
+            var group2 = new TagGroupModel() { Name = "Group 2" };
             group2.Tags.Add(new TagModel() { Name = "Tag D" });
             group2.Tags.Add(new TagModel() { Name = "Tag E" });
             group2.Tags.Add(new TagModel() { Name = "Tag F" });
